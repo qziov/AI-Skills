@@ -1,0 +1,118 @@
+{
+  "name": "governance-council",
+  "version": "1.0.0",
+  "description": "A cross-project six-ministry governance council: product drafting, architecture veto, design sign-off, engineering delivery, QA gating and operations, coordinated under a three-province-six-ministry SOP. Adapts to any project by reading that project's own constitution at runtime.",
+  "agents": [
+    "./agents/governance-council-team-lead.md",
+    "./agents/council-product.md",
+    "./agents/council-architect.md",
+    "./agents/council-design.md",
+    "./agents/council-dev.md",
+    "./agents/council-qa.md",
+    "./agents/council-ops.md"
+  ],
+
+  "expertType": "team",
+  "agentName": "governance-council-team-lead",
+  "teamInfo": {
+    "leadAgent": "governance-council-team-lead",
+    "memberAgents": [
+      "council-product",
+      "council-architect",
+      "council-design",
+      "council-dev",
+      "council-qa",
+      "council-ops"
+    ]
+  },
+
+  "displayName": {
+    "en": "Governance Council",
+    "zh": "三省六部治理团"
+  },
+  "profession": {
+    "en": "Governance Council",
+    "zh": "三省六部治理团"
+  },
+  "displayDescription": {
+    "en": "Cross-project six-ministry governance council: product drafting, architecture veto, design sign-off, engineering delivery, QA gating and ops feedback, escalating only major decisions.",
+    "zh": "跨项目六部治理团：产品起草、架构封驳、设计定稿、研发实现、测试把关、运营反馈，重大决策上报。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "zh": "给当前项目加个功能，走完整流程",
+    "en": "Add a feature to the current project - run the full workflow"
+  },
+  "plugin": "governance-council",
+  "tags": [
+    { "en": "Cross-functional Collaboration", "zh": "跨职能协作" },
+    { "en": "Governance & Decision Escalation", "zh": "治理与决策机制" },
+    { "en": "Team SOP Orchestration", "zh": "团队 SOP 编排" }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Add a feature to the current project - run the full workflow",
+      "zh": "给当前项目加个功能，走完整流程"
+    },
+    {
+      "en": "What is blocked right now, and what needs my decision",
+      "zh": "当前有哪些事在阻塞，哪些需要我拍板"
+    },
+    {
+      "en": "Review this proposal from an architecture angle - will it break the structure",
+      "zh": "从架构角度审一下这个方案会不会破坏结构"
+    }
+  ],
+  "members": [
+    {
+      "id": "governance-council-team-lead",
+      "displayName": { "en": "Mo", "zh": "莫执中" },
+      "profession": { "en": "Governance Orchestrator", "zh": "中枢调度官" },
+      "avatar": "avatars/governance-council-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "council-product",
+      "displayName": { "en": "Xu", "zh": "许定纲" },
+      "profession": { "en": "Product Lead", "zh": "产品主笔" },
+      "avatar": "avatars/council-product.png",
+      "role": "member"
+    },
+    {
+      "id": "council-architect",
+      "displayName": { "en": "Gao", "zh": "高维衡" },
+      "profession": { "en": "Architecture Reviewer", "zh": "架构审议官" },
+      "avatar": "avatars/council-architect.png",
+      "role": "member"
+    },
+    {
+      "id": "council-design",
+      "displayName": { "en": "Rong", "zh": "容正形" },
+      "profession": { "en": "Experience Design Lead", "zh": "体验设计主笔" },
+      "avatar": "avatars/council-design.png",
+      "role": "member"
+    },
+    {
+      "id": "council-dev",
+      "displayName": { "en": "Kou", "zh": "寇成器" },
+      "profession": { "en": "Software Engineer", "zh": "研发工程师" },
+      "avatar": "avatars/council-dev.png",
+      "role": "member"
+    },
+    {
+      "id": "council-qa",
+      "displayName": { "en": "Yan", "zh": "严究底" },
+      "profession": { "en": "Quality Gatekeeper", "zh": "质量把关人" },
+      "avatar": "avatars/council-qa.png",
+      "role": "member"
+    },
+    {
+      "id": "council-ops",
+      "displayName": { "en": "Wen", "zh": "闻众声" },
+      "profession": { "en": "User & Content Ops", "zh": "用户运营" },
+      "avatar": "avatars/council-ops.png",
+      "role": "member"
+    }
+  ]
+}
